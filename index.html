@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doğa su eren</title>
+    <style>
+        /* Genel stil ayarları */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Başlık kısmı için stil */
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header .menu-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end; /* Menü sağa kaydırıldı */
+    }
+
+
+        header .menu-list li {
+            margin: 0 15px;
+        }
+
+        header .menu-list a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header .menu-list a:hover {
+            text-decoration: underline;
+        }
+
+        /* Ana içerik kısmı için stil */
+        main {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: auto;
+            text-align: left;
+        }
+
+        main h2 {
+            color: #0073e6;
+        }
+
+        main p {
+            line-height: 1.6;
+        }
+
+        /* Alt bilgi kısmı için stil */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Kart stili */
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        /* Responsive tasarım */
+        @media (max-width: 600px) {
+            header .menu-list {
+                flex-direction: column;
+            }
+
+            header .menu-list li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Başlık kısmı -->
+    <header>
+        <h1>Doğa Su Eren</h1>
+        <ul class="menu-list">
+            <li><a href="#home">Anasayfa</a></li>
+            <li><a href="#about">Hakkımda</a></li>
+            <li><a href="#contact">İletişim</a></li>
+        </ul>
+    </header>
+
+    <!-- Ana içerik kısmı -->
+    <main>
+        <section id="about">
+            <h2>Hakkımda</h2>
+            <div class="card">
+                <p>Merhaba! Ben Doğa Su Eren. Moldova'da yazılım mühendisliği son sınıf öğrencisiyim. Yazılım geliştirme, web tasarımı ve kullanıcı deneyimi konularında tutkuluyum.</p>
+            </div>
+        </section>
+        <section id="recommendations">
+            <h2>Film ve Dizi Önerilerim</h2>
+            
+            <!-- Filmler -->
+            <h3>Filmler</h3>
+            <img src="film-image.jpg" alt="Filmler" style="width: 100%; max-width: 800px; border-radius: 8px; margin-bottom: 20px;">
+            <div class="card">
+                <h4><a href="https://www.imdb.com/title/tt1375666/" target="_blank">Inception</a></h4>
+                <p>Christopher Nolan'ın yönettiği bu film, rüya içinde rüya konseptiyle izleyiciyi büyüleyen bir bilim kurgu şaheseridir.</p>
+            </div>
+            <div class="card">
+                <h4><a href="https://www.imdb.com/title/tt0816692/" target="_blank">Interstellar</a></h4>
+                <p>Uzay yolculuğu ve insanlığın hayatta kalma mücadelesini konu alan bu film, görsel efektleri ve duygusal hikayesiyle dikkat çekiyor.</p>
+            </div>
+            
+            <!-- Diziler -->
+            <h3>Diziler</h3>
+            <img src="dizi-image.jpg" alt="Diziler" style="width: 100%; max-width: 800px; border-radius: 8px; margin-bottom: 20px;">
+            <div class="card">
+                <h4><a href="https://www.imdb.com/title/tt0903747/" target="_blank">Breaking Bad</a></h4>
+                <p>Kimya öğretmeni Walter White'ın suç dünyasına adım atışını anlatan bu dizi, modern televizyonun en iyi yapımlarından biridir.</p>
+            </div>
+            <div class="card">
+                <h4><a href="https://www.imdb.com/title/tt4574334/" target="_blank">Stranger Things</a></h4>
+                <p>80'ler nostaljisi ve bilim kurgu unsurlarıyla dolu bu dizi, küçük bir kasabada yaşanan gizemli olayları konu alıyor.</p>
+            </div>
+        </section>
+            <section id="contact">
+                <h2>İletişim</h2>
+                <div class="card">
+                    <p><strong>Email:</strong> dogasueren5@gmail.com</p>
+                    <p><strong>Telefon:</strong> +90 531 624 23 03</p>
+                    <p><strong>Adres:</strong> Moldova, Chisinau</p>
+                </div>
+            </section>
+           
+        </section>
+    </main>
+
+    <!-- Alt bilgi kısmı -->
+    <footer>
+        <p>&copy; 2025 Doğa Su Eren. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
